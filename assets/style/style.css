@@ -365,11 +365,6 @@ nav {
     letter-spacing: 0;
 }
 
-.notify__img img {
-    height: 48px;
-    border-radius: 24px;
-}
-
 .notify__message {
     display: block;
     padding: 0 10px;
@@ -516,48 +511,9 @@ nav {
     font-weight: 600;
 }
 
-.public-course,
-.public-relation {
+.public-course{
     background-color: #fafafa;
     padding-top: 66px;
-}
-
-.public-relation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.public-relation__img {
-    width: 76px;
-    margin-top: 44px;
-}
-
-.public-relation__img img {
-    width: inherit;
-}
-
-.public-relation__desc {
-    width: 100%;
-    text-align: center;
-    color: var(--black-color);
-    font-size: 18px;
-    line-height: 24px;
-    margin: 32px 0 12px 0;
-    font-weight: 600;
-}
-
-.public-relation__desc span {
-    font-size: 24px;
-    font-weight: 600;
-
-    background-image: linear-gradient(90deg, #0cb7d1, #32b47c);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.public-course {
     text-align: center;
 }
 
@@ -597,9 +553,8 @@ nav {
 
 .course-item__img {
     display: block;
-
     padding-top: 56.25%;
-    background-image: url(../img/course/html-css.jpg);
+    background-image: url(../img/course/responsive.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 50% 50%;
