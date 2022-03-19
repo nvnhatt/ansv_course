@@ -674,12 +674,12 @@ nav {
     margin-top: 16px !important;
 }
 
-.founder__img {
+.slogan__img {
     max-width: 100%;
     border-radius: 12px;
 }
 
-.founder-quote {
+.slogan-quote {
     display: flex;
     flex-shrink: 0;
     height: 100%;
@@ -688,7 +688,7 @@ nav {
     justify-content: center;
 }
 
-.founder-qoute__blockquote {
+.slogan-qoute__blockquote {
     margin: 0;
     font-family: 'Lora', serif;
     font-style: italic;
@@ -696,7 +696,7 @@ nav {
     line-height: 1.6;
 }
 
-.founder-qoute__author {
+.slogan-qoute__author {
     font-size: 14px;
     margin: 16px 0 12px;
 }
@@ -708,12 +708,12 @@ nav {
     background-image: var(--button-image);
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 739px) {
     .col-12--custom {
         padding: 0;
     }
 
-    .founder-quote {
+    .slogan-quote {
         margin-top: 20px;
     }
 }
@@ -783,10 +783,10 @@ nav {
     margin-top: 8px;
     padding: 8px 20px;
     font-weight: 5000;
-    background: var(--plum-color);
+    background: var(--primary-color);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023px) {
     .notify-header__func,
     .nav_separate,
     .nav__user-name,
@@ -892,7 +892,7 @@ nav {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 739px) {
     .nav-notify-btn {
         margin: 0;
     }
@@ -900,7 +900,7 @@ nav {
         padding: 0;
     }
 
-    .founder-quote {
+    .slogan-quote {
         margin-top: 20px;
     }
 
