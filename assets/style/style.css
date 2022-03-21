@@ -224,7 +224,6 @@ nav {
     left: 50%;
     content: '';
     border-bottom: 6px solid var(--black-color);
-    /* border-bottom: 8px solid red; */
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
     opacity: 0.8;

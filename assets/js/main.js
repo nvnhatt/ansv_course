@@ -12,6 +12,7 @@ const userDropdown = $('.user-dropdown');
 const playBtn = $('.banner__play ');
 const bannerOverlay = $('.banner__overlay');
 const bannerVideo = $('.banner__video');
+const bannerStop = $('.banner__stop');
 const bannerContent = $('.banner-content');
 
 // Handle header
