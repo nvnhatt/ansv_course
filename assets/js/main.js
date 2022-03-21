@@ -9,7 +9,8 @@ const notifyBtn = $('.js-notify');
 const notifyDropdown = $('.dropdown-notify');
 const userBtn = $('.js-user');
 const userDropdown = $('.user-dropdown');
-const playBtn = $('.banner__play ');
+const playBtn = $('.banner__play');
+const pauseBtn = $('.banner__pause');
 const bannerOverlay = $('.banner__overlay');
 const bannerVideo = $('.banner__video');
 const bannerStop = $('.banner__stop');
@@ -18,7 +19,6 @@ const bannerContent = $('.banner-content');
 // Handle header
 document.onscroll = function () {
     let space = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    console.log(space);
 
     if (space > 60) {
         header.style.backgroundColor = '#000';
@@ -89,13 +89,25 @@ userDropdown.onclick = function (event) {
 };
 
 // Handle Video
+pauseBtn.classList.add('hidden');
+
 playBtn.onclick = function () {
     console.log('click');
-    bannerVideo.muted = !bannerVideo.muted;
+    bannerVideo.muted = false;
     bannerVideo.audio = 1;
     bannerOverlay.style.visibility = 'hidden';
     bannerContent.style.visibility = 'hidden';
-    playBtn.style.visibility = 'hidden';
+    playBtn.classList.add('hidden');
+    pauseBtn.classList.remove('hidden');
+};
+pauseBtn.onclick = function () {
+    console.log('click');
+    bannerVideo.muted = true;
+    bannerVideo.audio = 0;
+    bannerOverlay.style.visibility = 'hidden';
+    bannerContent.style.visibility = 'hidden';
+    pauseBtn.classList.add('hidden');
+    playBtn.classList.remove('hidden');
 };
 
 // bannerOverlay.onmouseover = function (event) {
@@ -103,7 +115,6 @@ playBtn.onclick = function () {
 // }
 
 bannerVideo.onmouseover = function () {
-    console.log(132);
     bannerContent.style.visibility = 'visible';
     bannerOverlay.style.visibility = 'visible';
     bannerContent.style.opacity = 1;

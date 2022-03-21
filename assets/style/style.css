@@ -486,11 +486,13 @@ nav {
         var(--primary-color) 50%,
         var(--primary-color)
     );
+    transition: 0.3s;
 }
 
 .btn:hover {
     cursor: pointer;
     color: var(--white-color);
+    transform: scale(0.9);
 }
 
 .banner__play {
@@ -505,6 +507,22 @@ nav {
 }
 
 .banner__play span {
+    margin-left: 8px;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.banner__pause {
+    cursor: pointer;
+    padding: 8px 16px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.banner__pause span {
     margin-left: 8px;
     line-height: 1.15;
     font-weight: 600;
@@ -918,4 +936,8 @@ nav {
         font-size: 38px;
         line-height: 1.6;
     }
+}
+
+.hidden {
+    display: none !important;
 }
