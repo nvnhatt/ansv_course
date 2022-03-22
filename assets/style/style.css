@@ -405,6 +405,10 @@ nav {
     transition: background-color ease-in-out 0.3s;
 }
 
+.user-dropdown li a {
+    color: #333333;
+}
+
 .user-dropdown li:hover {
     background-color: rgba(22, 24, 35, 0.05);
 }
