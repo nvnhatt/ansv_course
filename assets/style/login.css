@@ -24,7 +24,7 @@
 }
 
 body {
-    background: url(../img/login_1.jpg);
+    background: url(../img/login_1.jpg) no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
