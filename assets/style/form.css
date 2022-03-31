@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu a:active{
+    background-color: #198754;
+}
+
+.dropdown-menu li {
+    display: flex;
+    width: 250px;
+}
+
+.dropdown-menu li:hover {
+    background: #e9ecef;
+}
+
+.dropdown-menu li button {
+    margin: 5px;
+}
