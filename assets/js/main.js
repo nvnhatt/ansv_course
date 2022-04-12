@@ -21,11 +21,28 @@ document.onscroll = function () {
     let space = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
     if (space > 60) {
-        header.style.backgroundColor = '#000';
+        console.log('scroll');
+        header.style.backgroundColor = '#fff';
         header.style.marginTop = '0';
+        document.querySelectorAll('.nav-list__item a').forEach(function (item) {
+            item.style.color = '#000';
+        });
+        document.querySelector('.nav__user-name').style.color = '#000';
+        document.querySelector('.nav_separate').style.backgroundColor = '#000';
+        document.querySelectorAll('.nav-notify i').forEach(function (item) {
+            item.style.color = '#000';
+        });
     } else {
         header.style.backgroundColor = 'transparent';
         header.style.marginTop = '14px';
+        document.querySelectorAll('.nav-list__item a').forEach(function (item) {
+            item.style.color = '#fff';
+        });
+        document.querySelector('.nav__user-name').style.color = '#fff';
+        document.querySelector('.nav_separate').style.backgroundColor = '#fff';
+        document.querySelectorAll('.nav-notify i').forEach(function (item) {
+            item.style.color = '#fff';
+        });
     }
 };
 
